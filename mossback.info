@@ -22,6 +22,8 @@ settings[toggle_main_menu] = 1
 settings[toggle_secondary_menu] = 1
 settings[mossback_wireframe_mode] = 1
 settings[mossback_rebuild_registry] = 0
+settings[mossback_breadcrumb] = no
+settings[mossback_breadcrumb_separator] = »
 
 ; CSS
 ;stylesheets[all][] = bower/normalize.css/normalize.css

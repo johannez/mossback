@@ -4,7 +4,7 @@
 #header
     .container
         background: $wireframe-header-color
-        padding: 2em 0.5em
+        padding: 1em
         margin-bottom: 1em
 
     #logo
@@ -17,8 +17,6 @@
 
         margin-bottom: 0.5em
         padding-top: 1em
-
-
 
     #secondary-menu
         +span-columns(3)
@@ -40,11 +38,13 @@
                 &:hover
                     background: $light-yellow
 
-#main .region
-    background: $wireframe-content-color
-    padding: 2em 0.5em
+#main
+    .node .content,
+    .panel-panel-inner
+        background: $wireframe-content-color
+        padding: 1em
 
 #footer .container
     background: $wireframe-footer-color
-    padding: 2em 0.5em
+    padding: 1em
     margin-top: 1em

@@ -330,7 +330,7 @@ div.messages {
 /* line 5, ../sass/wireframe.sass */
 #header .container {
   background: #f7f7f7;
-  padding: 2em 0.5em;
+  padding: 1em;
   margin-bottom: 1em; }
 /* line 10, ../sass/wireframe.sass */
 #header #logo {
@@ -353,7 +353,7 @@ div.messages {
   /* line 38, ../bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   #header #site-name:last-child {
     margin-right: 0; }
-/* line 23, ../sass/wireframe.sass */
+/* line 21, ../sass/wireframe.sass */
 #header #secondary-menu {
   float: left;
   display: block;
@@ -363,10 +363,10 @@ div.messages {
   /* line 38, ../bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   #header #secondary-menu:last-child {
     margin-right: 0; }
-  /* line 26, ../sass/wireframe.sass */
+  /* line 24, ../sass/wireframe.sass */
   #header #secondary-menu .links {
     float: right; }
-/* line 29, ../sass/wireframe.sass */
+/* line 27, ../sass/wireframe.sass */
 #header #main-menu {
   float: left;
   display: block;
@@ -376,24 +376,25 @@ div.messages {
   /* line 38, ../bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   #header #main-menu:last-child {
     margin-right: 0; }
-/* line 34, ../sass/wireframe.sass */
+/* line 32, ../sass/wireframe.sass */
 #header .navigation li {
   float: left;
   margin-right: 1em; }
-  /* line 38, ../sass/wireframe.sass */
+  /* line 36, ../sass/wireframe.sass */
   #header .navigation li a {
     padding: 0.5em; }
-    /* line 40, ../sass/wireframe.sass */
+    /* line 38, ../sass/wireframe.sass */
     #header .navigation li a:hover {
       background: #fff6bf; }
 
-/* line 43, ../sass/wireframe.sass */
-#main .region {
+/* line 42, ../sass/wireframe.sass */
+#main .node .content,
+#main .panel-panel-inner {
   background: #e5edf8;
-  padding: 2em 0.5em; }
+  padding: 1em; }
 
 /* line 47, ../sass/wireframe.sass */
 #footer .container {
   background: #dddddd;
-  padding: 2em 0.5em;
+  padding: 1em;
   margin-top: 1em; }
