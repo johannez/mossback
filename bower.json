@@ -1,0 +1,18 @@
+{
+  "name": "Mossback",
+  "version": "0.0.1",
+  "dependencies": {
+    "normalize.css": "latest",
+    "modernizr": "latest",
+    "bourbon": "latest",
+    "neat": "latest",
+    "fontawesome": "latest",
+    "formalize": "latest",
+    "equalize": "latest",
+    "jpanelmenu": "latest",
+    "flexslider": "latest",
+    "colorbox": "1.5.*",
+    "detectizr": "2.*"
+  },
+  "private": true
+}

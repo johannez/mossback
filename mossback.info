@@ -1,0 +1,45 @@
+name        = Mossback
+description = A Drupal starter theme with Bower, Grunt and Bourbon.
+screenshot  = img/screenshot.png
+core        = 7.x
+
+; Regions
+regions[header] = Header
+regions[content] = Content
+regions[footer] = Footer
+
+; Features
+features[] = logo
+features[] = name
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+
+; Default settings
+settings[toggle_logo] = 1
+settings[toggle_main_menu] = 1
+settings[toggle_secondary_menu] = 1
+settings[mossback_wireframe_mode] = 1
+settings[mossback_rebuild_registry] = 0
+
+; CSS
+;stylesheets[all][] = bower/normalize.css/normalize.css
+;stylesheets[all][] = bower/formalize/assets/css/formalize.css
+;stylesheets[all][] = bower/flexslider/flexslider.css
+stylesheets[all][] = css/main.css
+
+; Javascript
+;scripts[] = bower/equalize/js/equalize.min.js
+;scripts[] = bower/colorbox/jquery.colorbox-min.js
+;scripts[] = bower/formalize/assets/js/jquery.formalize.min.js
+;scripts[] = bower/jpanelmenu/jquery.jpanelmenu.min.js
+;scripts[] = bower/flexslider/jquery.flexslider-min.js
+scripts[] = js/main.js
+
+; Panels
+plugins[panels][layouts] = plugins/layouts
+
+
+
+

@@ -1,0 +1,25 @@
+.clearfix
+    +clearfix
+
+.hidden
+    display: none
+
+.hide-text
+    +hide-text
+
+.container
+    +outer-container
+
+div.messages
+    font-weight: bold
+    margin-bottom: $base-font-size
+    padding: $base-font-size
+
+    &.status
+        +flash($success-color)
+
+    &.error
+        +flash($error-color)
+
+    &.warning
+        +flash($alert-color)

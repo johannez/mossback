@@ -1,0 +1,50 @@
+@import main
+
+
+#header
+    .container
+        background: $wireframe-header-color
+        padding: 2em 0.5em
+        margin-bottom: 1em
+
+    #logo
+        +span-columns(1)
+
+    #site-name
+        +span-columns(8)
+        +omega
+        @extend h2
+
+        margin-bottom: 0.5em
+        padding-top: 1em
+
+
+
+    #secondary-menu
+        +span-columns(3)
+        +omega
+        .links
+            float: right
+
+    #main-menu
+        +span-columns(12)
+        margin-top: 1em
+
+    .navigation
+        li
+            float: left
+            margin-right: 1em
+
+            a
+                padding: 0.5em
+                &:hover
+                    background: $light-yellow
+
+#main .region
+    background: $wireframe-content-color
+    padding: 2em 0.5em
+
+#footer .container
+    background: $wireframe-footer-color
+    padding: 2em 0.5em
+    margin-top: 1em
