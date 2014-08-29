@@ -13,7 +13,9 @@
 <div class="panel-display boxton clearfix container <?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
   <div class="row-fluid">
     <div class="boxton-container boxton-content boxton-content-region panel-panel span12">
-      <?php print $content['contentmain']; ?>
+      <div class="boxton-content-inner boxton-content-region-inner panel-panel-inner">
+        <?php print $content['contentmain']; ?>
+      </div>
     </div>
   </div>
 </div><!-- /.boxton -->
