@@ -1,31 +1,38 @@
-@import main
+@import ../bower_components/bourbon/app/assets/stylesheets/bourbon
+@import ../bower_components/neat/app/assets/stylesheets/neat-helpers
+@import base/variables
+@import base/grid-settings
+@import ../bower_components/neat/app/assets/stylesheets/neat
+// @import ../bower_components/fontawesome/css/font-awesome.min.css
+
+// Global variables, mixins and styles.
+@import base/mixins
+@import base/typography
+@import base/forms
+@import base/lists
+@import base/tables
+@import base/buttons
+@import base/extends
+@import base/layout
 
 
 #header
     .container
-        background: $wireframe-header-color
+        background: lighten($light-gray, 10%)
         padding: 1em
         margin-bottom: 1em
 
-    #logo
-        +span-columns(1)
-
     #site-name
-        +span-columns(8)
-        +omega
         @extend h2
 
         margin-bottom: 0.5em
         padding-top: 1em
 
     #secondary-menu
-        +span-columns(3)
-        +omega
         .links
             float: right
 
     #main-menu
-        +span-columns(12)
         margin-top: 1em
 
     .navigation
@@ -41,12 +48,17 @@
                     background: $light-yellow
 
 #main
-    .node .content,
-    .panel-panel-inner
-        background: $wireframe-content-color
+    #highlighted
+        background: $light-green
+        padding: 1em
+        margin-bottom: 1em
+
+    #sidebar-first,
+    #sidebar-second
+        background: lighten($blue, 40%)
         padding: 1em
 
 #footer .container
-    background: $wireframe-footer-color
+    background: $light-gray
     padding: 1em
     margin-top: 1em

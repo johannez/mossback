@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(../bower_components/fontawesome/css/font-awesome.min.css);
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -19,7 +20,6 @@ body {
 
 h1,
 h2,
-#header #site-name,
 h3,
 h4,
 h5,
@@ -32,7 +32,7 @@ h6 {
 h1 {
   font-size: 1.96875em; }
 
-h2, #header #site-name {
+h2 {
   font-size: 1.75em; }
 
 h3 {
@@ -275,135 +275,4 @@ div.messages {
       div.messages.warning a:hover {
         color: black; }
 
-#logo {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 6.38298%; }
-  #logo:last-child {
-    margin-right: 0; }
-
-#site-name {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 23.40426%; }
-  #site-name:last-child {
-    margin-right: 0; }
-
-#secondary-menu {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 23.40426%;
-  margin-left: 42.55319%; }
-  #secondary-menu:last-child {
-    margin-right: 0; }
-
-#header-region {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 65.95745%; }
-  #header-region:last-child {
-    margin-right: 0; }
-
-#main-menu {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 100%; }
-  #main-menu:last-child {
-    margin-right: 0; }
-
-.no-sidebars #content {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 100%; }
-  .no-sidebars #content:last-child {
-    margin-right: 0; }
-.one-sidebar.sidebar-first #content {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 74.46809%;
-  margin-left: 25.53191%; }
-  .one-sidebar.sidebar-first #content:last-child {
-    margin-right: 0; }
-.one-sidebar.sidebar-second #content {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 74.46809%; }
-  .one-sidebar.sidebar-second #content:last-child {
-    margin-right: 0; }
-.two-sidebars #content {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 48.93617%;
-  margin-left: 25.53191%; }
-  .two-sidebars #content:last-child {
-    margin-right: 0; }
-
-#sidebar-first {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 23.40426%;
-  margin-left: -76.59574%; }
-  #sidebar-first:last-child {
-    margin-right: 0; }
-  .one-sidebar #sidebar-first {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 23.40426%;
-    margin-left: -102.12766%; }
-    .one-sidebar #sidebar-first:last-child {
-      margin-right: 0; }
-
-#sidebar-second {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 23.40426%;
-  margin-right: 0; }
-  #sidebar-second:last-child {
-    margin-right: 0; }
-
-#header .container {
-  background: #f7f7f7;
-  padding: 1em;
-  margin-bottom: 1em; }
-#header #site-name {
-  margin-bottom: 0.5em;
-  padding-top: 1em; }
-#header #secondary-menu .links {
-  float: right; }
-#header #main-menu {
-  margin-top: 1em; }
-#header .navigation li {
-  float: left;
-  margin-right: 1em; }
-  #header .navigation li a {
-    padding: 0.5em; }
-    #header .navigation li a:hover, #header .navigation li a.active-trail {
-      background: #FFF6BF; }
-
-#main #highlighted {
-  background: #E6EFC2;
-  padding: 1em;
-  margin-bottom: 1em; }
-#main #sidebar-first,
-#main #sidebar-second {
-  background: #e5edf8;
-  padding: 1em; }
-
-#footer .container {
-  background: #DDD;
-  padding: 1em;
-  margin-top: 1em; }
-
-/*# sourceMappingURL=wireframe.css.map */
+/*# sourceMappingURL=mossback.css.map */

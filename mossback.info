@@ -5,7 +5,11 @@ core        = 7.x
 
 ; Regions
 regions[header] = Header
+regions[highlighted] = Highlighted
+regions[help] = Help
 regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
 regions[footer] = Footer
 
 ; Features
@@ -26,21 +30,10 @@ settings[mossback_breadcrumb] = no
 settings[mossback_breadcrumb_separator] = »
 
 ; CSS
-;stylesheets[all][] = bower/normalize.css/normalize.css
-;stylesheets[all][] = bower/formalize/assets/css/formalize.css
-;stylesheets[all][] = bower/flexslider/flexslider.css
-stylesheets[all][] = css/main.css
+stylesheets[all][] = css/mossback.css
 
 ; Javascript
-;scripts[] = bower/equalize/js/equalize.min.js
-;scripts[] = bower/colorbox/jquery.colorbox-min.js
-;scripts[] = bower/formalize/assets/js/jquery.formalize.min.js
-;scripts[] = bower/jpanelmenu/jquery.jpanelmenu.min.js
-;scripts[] = bower/flexslider/jquery.flexslider-min.js
-scripts[] = js/main.js
-
-; Panels
-plugins[panels][layouts] = plugins/layouts
+scripts[] = js/mossback.js
 
 
 

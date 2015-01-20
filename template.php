@@ -40,8 +40,6 @@ function mossback_preprocess_html(&$vars) {
         $path = drupal_get_path_alias($_GET['q']);
         list($section, ) = explode('/', $path, 2);
         $vars['classes_array'][] = 'with-subnav';
-        // $vars['classes_array'][] = presidio_id_safe('page-'. $path);
-        // $vars['classes_array'][] = presidio_id_safe('section-'. $section);
     }
 
     if (theme_get_setting('mossback_wireframe_mode')) {
@@ -51,32 +49,16 @@ function mossback_preprocess_html(&$vars) {
 }
 
 function mossback_preprocess_page(&$vars, $hook) {
-    // Determine if the page is rendered using panels.
-    $vars['is_panel'] = FALSE;
-    if (module_exists('page_manager') && count(page_manager_get_current_page())) {
-        $vars['is_panel'] = TRUE;
-    }
-
     // Make sure tabs is empty.
     if (empty($vars['tabs']['#primary']) && empty($vars['tabs']['#secondary'])) {
         $vars['tabs'] = '';
     }
 }
 
-function mossback_preprocess_panels_pane(&$vars) {
-    if ($vars['pane']->type === 'custom') {
-        $vars['classes_array'][] = 'pane-custom-' . $vars['pane']->pid;
-        $vars['classes_array'][] = str_replace('_', '-', $vars['pane']->subtype);
-
-        if (!empty($vars['pane']->configuration['name'])) {
-            $vars['classes_array'][] = str_replace('_', '-', $vars['pane']->configuration['name']);
-        }
-    }
-}
-
 function mossback_css_alter(&$css) {
+    // Remove the main css file when in wireframe mode.
     if (theme_get_setting('mossback_wireframe_mode')) {
-        unset($css[drupal_get_path('theme', 'mossback') . '/css/main.css']);
+        unset($css[drupal_get_path('theme', 'mossback') . '/css/mossback.css']);
     }
 }
 
