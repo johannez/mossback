@@ -4,9 +4,9 @@
 @import base/variables
 @import base/grid-settings
 @import ../bower_components/neat/app/assets/stylesheets/neat
-@import ../bower_components/fontawesome/css/font-awesome.min.css
+@import ../bower_components/fontawesome/scss/font-awesome.scss
 
-// Global variables, mixins and styles.
+// Default styles and mixings.
 @import base/mixins
 @import base/typography
 @import base/forms
@@ -15,8 +15,10 @@
 @import base/buttons
 @import base/extends
 
-// Section specific styles
-@import sections/header
-@import sections/footer
-@import sections/pages
+// Custom styles.
+@import "blocks/*"
+@import "pages/*"
+@import "entities/*"
+@import "forms/*"
+@import "regions/*"
 

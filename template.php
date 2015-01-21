@@ -13,6 +13,9 @@ if (theme_get_setting('mossback_rebuild_registry')) {
   drupal_theme_rebuild();
 }
 
+/**
+ * Implements theme_preprocess_html().
+ */
 function mossback_preprocess_html(&$vars) {
     global $user, $language;
 
@@ -41,24 +44,15 @@ function mossback_preprocess_html(&$vars) {
         list($section, ) = explode('/', $path, 2);
         $vars['classes_array'][] = 'with-subnav';
     }
-
-    if (theme_get_setting('mossback_wireframe_mode')) {
-        drupal_add_css(drupal_get_path('theme', 'mossback') . '/css/wireframe.css', array('type' => 'file'));
-    }
-
 }
 
+/**
+ * Implements theme_preprocess_page().
+ */
 function mossback_preprocess_page(&$vars, $hook) {
     // Make sure tabs is empty.
     if (empty($vars['tabs']['#primary']) && empty($vars['tabs']['#secondary'])) {
         $vars['tabs'] = '';
-    }
-}
-
-function mossback_css_alter(&$css) {
-    // Remove the main css file when in wireframe mode.
-    if (theme_get_setting('mossback_wireframe_mode')) {
-        unset($css[drupal_get_path('theme', 'mossback') . '/css/mossback.css']);
     }
 }
 
