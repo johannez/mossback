@@ -1,24 +1,25 @@
-// Bower libraries.
+// Reset
+@import ../bower_components/normalize.css/normalize.css
+
+// Bourbon, Neat and Bitters.
 @import ../bower_components/bourbon/app/assets/stylesheets/bourbon
 @import ../bower_components/neat/app/assets/stylesheets/neat-helpers
-@import base/variables
-@import base/grid-settings
+@import base/base
 @import ../bower_components/neat/app/assets/stylesheets/neat
-@import ../bower_components/fontawesome/scss/font-awesome.scss
 
-// Default styles and mixings.
-@import base/mixins
-@import base/typography
-@import base/forms
-@import base/lists
-@import base/tables
-@import base/buttons
-@import base/extends
 
-// Custom styles.
-@import "blocks/*"
-@import "pages/*"
-@import "entities/*"
-@import "forms/*"
-@import "regions/*"
+// Regions.
+@import regions/regions
+
+// Entities
+@import entities/entities
+
+// Pages
+@import pages/pages
+
+// Forms
+@import forms/forms
+
+// Blocks
+@import blocks/blocks
 
