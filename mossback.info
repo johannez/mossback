@@ -30,7 +30,7 @@ settings[mossback_breadcrumb] = no
 settings[mossback_breadcrumb_separator] = »
 
 ; CSS
-stylesheets[all][] = css/mossback.css
+stylesheets[all][] = css/style.css
 
 ; Javascript
 scripts[] = js/mossback.js

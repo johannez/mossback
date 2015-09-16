@@ -1,0 +1,10 @@
+.container {
+  @include outer-container();
+}
+
+@import "region.header";
+@import "region.highlighted";
+@import "region.content";
+@import "region.sidebar.first";
+@import "region.sidebar.second";
+@import "region.footer";
