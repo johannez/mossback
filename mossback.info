@@ -5,6 +5,8 @@ core        = 7.x
 
 ; Regions
 regions[header] = Header
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
 regions[highlighted] = Highlighted
 regions[help] = Help
 regions[content] = Content
