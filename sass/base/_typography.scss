@@ -4,6 +4,7 @@ body {
   font-feature-settings: "kern", "liga", "pnum";
   font-size: $base-font-size;
   line-height: $base-line-height;
+  margin: 0;
 }
 
 h1,
@@ -46,4 +47,5 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+  height: auto;
 }
